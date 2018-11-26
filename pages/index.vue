@@ -26,6 +26,11 @@ export default {
     }
 
   },
+  methods:{
+    alert(a){
+      alert(a)
+    }
+  },
   components: {
     Logo
   }
