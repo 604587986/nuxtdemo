@@ -6,7 +6,7 @@
         nuxt
       </h1>
       <h2 class="subtitle">
-        我的第一个nuxt项目,测试一下
+        我的第一个nuxt项目,测试一下1
       </h2>
 
     </div>
