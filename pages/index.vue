@@ -3,11 +3,13 @@
     <div>
       <logo/>
       <h1 class="title">
-        nuxt
       </h1>
       <h2 class="subtitle">
         我的第一个nuxt项目,测试一下1
       </h2>
+        <ul>
+          <li v-for="item in list" :key="item.ID">{{item.NAME}}</li>
+        </ul>
 
     </div>
   </section>
@@ -15,8 +17,15 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
-
+import axios from 'axios'
 export default {
+  async asyncData({params}){
+    let {data} = await axios.get('http://210.33.125.36/szcp/authentication/getSchoolList?pindex=1&size=1000');
+    return {
+      list:data.data.list
+    }
+
+  },
   components: {
     Logo
   }

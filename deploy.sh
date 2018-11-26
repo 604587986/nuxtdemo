@@ -2,8 +2,6 @@
   git pull origin master
   echo -e "\033[32m代码拉取完成...\033[0m"
 
-  echo "开始部署..."
-  rm -rf node_modules
   echo "开始安装项目依赖..."
    npm install
    npm run build
