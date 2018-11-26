@@ -6,7 +6,7 @@
         nuxt
       </h1>
       <h2 class="subtitle">
-        My first-rate Nuxt.js project
+        我的第一个nuxt项目
       </h2>
       <div class="links">
         <a
