@@ -5,8 +5,8 @@
   echo "开始部署..."
   rm -rf node_modules
   echo "开始安装项目依赖..."
-  sudo npm install
-  sudo npm run build
+   npm install
+   npm run build
   echo -e "\033[32m文件build完成\033[0m"
   # 启动
   echo "开始重新启动..."
