@@ -8,7 +8,7 @@
         我的第一个nuxt项目,测试一下1
       </h2>
         <ul>
-          <li v-for="item in list" :key="item.ID">{{item.NAME}}</li>
+          <li v-for="item in list" :key="item.ID" @click="alert(item.NAME)">{{item.NAME}}</li>
         </ul>
 
     </div>
